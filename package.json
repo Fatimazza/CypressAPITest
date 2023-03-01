@@ -1,0 +1,22 @@
+{
+  "name": "cypressapitest",
+  "version": "1.0.0",
+  "description": "cypress api automation testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatimazza/CypressAPITest.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "fatimazza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fatimazza/CypressAPITest/issues"
+  },
+  "homepage": "https://github.com/fatimazza/CypressAPITest#readme"
+}
