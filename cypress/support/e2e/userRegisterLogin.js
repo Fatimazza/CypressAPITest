@@ -3,11 +3,11 @@ describe('PetStore User API Testing', () => {
         // add request body
         let body = {
             "id": 123,
-            "username": "Fatima123",
+            "username": Cypress.env('username'),
             "firstName": "Fatima",
             "lastName": "Zza",
             "email": "fatima@mail.com",
-            "password": "Pass123",
+            "password": Cypress.env('password'),
             "phone": "081234567890",
             "userStatus": 0
         }
