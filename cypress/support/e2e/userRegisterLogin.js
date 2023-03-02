@@ -20,4 +20,22 @@ describe('PetStore User API Testing', () => {
             expect(user.status).to.equal(200);
         })
     })
+
+    // add query parameters
+    const loginUser = {
+        method: 'GET',
+        url: '/user/login',
+        qs: {
+            username: Cypress.env('username'),
+            password: Cypress.env('password')
+        }
+    }
+    it('Login registered user - GET', () => {
+        // request to URL
+        cy.request(loginUser).as('loginUser');
+        // assertion
+        cy.get('@loginUser').then(loginUser => {
+            expect(loginUser.status).to.equal(200);
+        })
+    })
 })
