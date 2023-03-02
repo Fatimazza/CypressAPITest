@@ -17,7 +17,7 @@ describe('PetStore API Testing', () => {
             .as('createUser');
         // assertion
         cy.get('@createUser').then(user => {
-            expect(user.status).to.equal(404);
+            expect(user.status).to.equal(200);
         })
     })
 })
