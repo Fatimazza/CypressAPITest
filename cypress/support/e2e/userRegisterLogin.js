@@ -22,7 +22,7 @@ describe('PetStore User API Testing', () => {
     })
 
     // add query parameters
-    const loginUser = {
+    const loginUserOptions = {
         method: 'GET',
         url: '/user/login',
         qs: {
@@ -32,10 +32,10 @@ describe('PetStore User API Testing', () => {
     }
     it('Login registered user - GET', () => {
         // request to URL
-        cy.request(loginUser).as('loginUser');
+        cy.request(loginUserOptions).as('loginUser');
         // assertion
-        cy.get('@loginUser').then(loginUser => {
-            expect(loginUser.status).to.equal(200);
+        cy.get('@loginUser').then(loggedUser => {
+            expect(loggedUser.status).to.equal(200);
         })
     })
 })
