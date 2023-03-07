@@ -27,3 +27,41 @@ npm --version
 ```Bash
 node --version
 ```
+
+## Setting up Project
+
+### Clone
+
+**👉 [Clone this Repository](https://github.com/Fatimazza/CypressAPITest/)** through Terminal or Command Prompt
+
+### Open the Project on Editor
+
+Open this Automation Project using VS Code Editor.
+
+### Run the Automation Project 
+
+Change to Project directory on Terminal or Command Prompt
+
+```Bash
+cd CypressAPITest
+```
+
+Install Cypress
+
+```Bash
+npm install cypress --save-dev
+```
+
+Run Test Execution on Terminal
+
+```Bash
+npx cypress run 
+```
+
+Video of the Test Execution available on <b> MyCypressTest/cypress/videos/ </b>
+
+Run Test Execution via Browser
+
+```Bash
+npx cypress open
+```
