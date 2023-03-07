@@ -12,7 +12,7 @@ What will be used on this project
 | -------------- | ------------------------------------------------------------ |
 | Editor         | VS Code (https://code.visualstudio.com/download) |
 | Package Manager| NPM (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) |
-| UI Test Tools  | Cypress (https://docs.cypress.io/guides/getting-started/installing-cypress) |
+| API Test Tools  | Cypress (https://docs.cypress.io/guides/getting-started/installing-cypress) |
 | Browser        | Latest version of Chrome / Mozilla Firefox / Edge  |
 
 ## Pre-Requisite Installation
