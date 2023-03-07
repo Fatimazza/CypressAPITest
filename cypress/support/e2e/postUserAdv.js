@@ -25,4 +25,31 @@ describe('PetStore API Testing - Create User - POST', () => {
             expect(user.status).to.equal(200);
         })
     })
+
+    it('Validate Response Header', () => {
+        // assertion
+        cy.get('@createUser').then(user => {
+            expect(user).to.have.property('headers');
+            expect(user.headers['content-type']).to.equal('application/json');
+        })
+    })
+
+    it('Validate Response Body', () => {
+        // assertion
+        cy.get('@createUser').then(user => {
+            expect(user).to.be.an('object');
+        })
+    })
+
+    it('Validate Response Body Object should have correct Property & Value', () => {
+        // assertion
+        cy.get('@createUser').then(user => {
+            expect(user.body).to.haveOwnProperty('code');
+            expect(user.body).to.haveOwnProperty('type');
+            expect(user.body).to.haveOwnProperty('message');
+            expect(user.body.code).to.be.a('number');
+            expect(user.body.type).to.equal('unknown');
+            expect(user.body.message).lengthOf.greaterThan(2);
+        })
+    })
 })
