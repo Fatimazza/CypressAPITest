@@ -35,4 +35,11 @@ describe('PetStore API Testing - Store Inventory - GET', () => {
             expect(inventory.body.pending).to.be.a('number');
         })
     })
+
+    it.skip('Validate Response Body Object - Skipped Test', () => {
+        // assertion
+        cy.get('@getInventory').then(inventory => {
+            expect(inventory.body.available).to.equal(229);
+        })
+    })
 })
