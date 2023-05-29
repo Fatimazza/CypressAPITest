@@ -13,4 +13,12 @@ module.exports = defineConfig({
             password: "Pass123"
         }
     },
+    reporter: "mochawesome",
+    reporterOptions: {
+        reportDir: "cypress/report/mochawesome-report",
+        charts: true,
+        overwrite: false,
+        html: false,
+        json: true
+    }
 });
