@@ -12,7 +12,8 @@ What will be used on this project
 | -------------- | ------------------------------------------------------------ |
 | Editor         | VS Code (https://code.visualstudio.com/download) |
 | Package Manager| NPM (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) |
-| API Test Tools  | Cypress (https://docs.cypress.io/guides/getting-started/installing-cypress) |
+| API Test Tools | Cypress (https://docs.cypress.io/guides/getting-started/installing-cypress) |
+| Test Reporter  | Mochawesome (https://www.npmjs.com/package/mochawesome) |
 | Browser        | Latest version of Chrome / Mozilla Firefox / Edge  |
 
 ## Pre-Requisite Installation
@@ -65,3 +66,40 @@ Run Test Execution via Browser
 ```Bash
 npx cypress open
 ```
+
+### Generate Test Execution HTML Report
+
+Install Mochawesome Reporter
+
+```Bash
+npm install --save-dev mochawesome mochawesome-merge
+```
+
+Run Cypress with the Reporter
+
+> Note: Please wait until all test execution finished
+
+```Bash
+npx cypress run --reporter mochawesome
+```
+
+OR
+
+```Bash
+npm run test
+```
+
+Merge the reports into a single one
+
+```Bash
+npm run test:merge
+```
+
+Convert the JSON into HTML Report
+
+```Bash
+npm run test:report
+```
+
+Test Execution HTML Report available on <b> CypressAPITest/report.html </b>
+
