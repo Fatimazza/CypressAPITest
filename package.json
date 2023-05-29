@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run --reporter mochawesome",
+    "test:merge": "npx mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/report.json",
+    "test:report": "npx marge cypress/report/report.json --reportDir ./ --inline",
     "no-test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
