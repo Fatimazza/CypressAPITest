@@ -4,7 +4,8 @@
   "description": "cypress api automation testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run --reporter mochawesome",
+    "no-test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
